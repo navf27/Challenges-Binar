@@ -1,0 +1,408 @@
+{
+    "item": [
+        {
+            "id": "f48dd96c-2f95-4d5d-9c05-506b68d950cc",
+            "name": "register",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "auth",
+                        "register"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "POST",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"username\":\"username123\",\"password\":\"password123\"}"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "f1ace4e9-86e6-4053-b299-31c295febd88",
+            "name": "login",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "auth",
+                        "login"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "POST",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"username\":\"username123\",\"password\":\"password123\"}"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "1df0c712-3f96-49fe-a973-e540f6771e70",
+            "name": "whoami",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "auth",
+                        "whoami"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": ""
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "cache-control",
+                        "value": "no-cache"
+                    }
+                ],
+                "method": "GET"
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "10256735-a20e-4485-99ee-7963b99aa4a5",
+            "name": "change-password",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "auth",
+                        "change"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": ""
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "cache-control",
+                        "value": "no-cache"
+                    }
+                ],
+                "method": "POST",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"username\":\"username123\",\"oldPassword\":\"password123\",\"newPassword\":\"mypassword123\",\"confirmNewPassword\":\"mypassword123\"}"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "45207490-46c1-4ba5-a68f-f22b22805e7a",
+            "name": "user-index",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "user",
+                        "index"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET"
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "67589dd7-2f20-4b42-a595-7cc91cc4b3d6",
+            "name": "user-delete",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "user",
+                        "delete"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": ""
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "cache-control",
+                        "value": "no-cache"
+                    }
+                ],
+                "method": "DELETE",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"username\":\"username123\",\"password\":\"password123\"}"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "575c6893-bb6a-4f0c-9da2-335bfeba5968",
+            "name": "user-bio-create",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "user-bio",
+                        "create"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "POST",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"account_name\":\"kucing_gaming\",\"account_level\":\"gold\"}"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "71fd0449-95d8-4abe-bc88-208b26cea61f",
+            "name": "user-bio-index",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "user-bio",
+                        "index"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET"
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "984fa39f-786d-4efa-8ce5-6889e76a5908",
+            "name": "user-bio-update",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "user-bio",
+                        "update"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "PUT",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"account_name\":\"kucing_gaming\",\"account_level\":\"silver\"}"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "13958337-8bdc-4a0d-beab-5ab511280dc4",
+            "name": "user-bio-delete",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "user-bio",
+                        "delete"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "DELETE",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"account_name\":\"kucing_gaming\",\"account_level\":\"silver\"}"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "3c4bedbf-bcba-4362-9894-a101b4ef880f",
+            "name": "user-history-create",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "user-history",
+                        "create"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "POST",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"highest_tier\":\"gold\",\"highest_points\":3000}"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "4dbd4ece-a649-47a7-82b3-bfdc1959a483",
+            "name": "user-history-index",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "user-history",
+                        "index"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET"
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "1a1398a5-9b5d-4b1c-948b-47f331eb0f33",
+            "name": "user-history-update",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "user-history",
+                        "update"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "PUT",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\":1,\"highest_tier\":\"gold\",\"highest_points\":3000}"
+                }
+            },
+            "response": [],
+            "event": []
+        },
+        {
+            "id": "de2c2ce2-f525-4f3d-ba96-7f8f5fc0bbbf",
+            "name": "user-history-delete",
+            "request": {
+                "url": {
+                    "protocol": "http",
+                    "port": "3000",
+                    "path": [
+                        "user-history",
+                        "delete",
+                        "1"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "cache-control",
+                        "value": "no-cache"
+                    }
+                ],
+                "method": "DELETE"
+            },
+            "response": [],
+            "event": []
+        }
+    ],
+    "event": [],
+    "variable": [],
+    "info": {
+        "_postman_id": "a24e2966-0960-4800-9a0a-266509e00c5f",
+        "name": "Challenge 4 documentation",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    }
+}
